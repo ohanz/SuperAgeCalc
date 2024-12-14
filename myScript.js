@@ -4,6 +4,7 @@ let dateOfBirth = document.querySelector("#DOB");
 const CalcAge= document.getElementById("CalcAge");
 const displayAge= document.getElementById("displayAge");
 const Age= document.getElementById("Age");
+let demoClick = document.getElementById("demo");
 var today = new Date();
 currentDate.innerText=`Today's Date is: ${today.toLocaleDateString('en-US')}`;
 
@@ -17,11 +18,14 @@ CalcAge.addEventListener("click",()=>{
 
     displayAge.style.visibility="visible";
     Age.innerText=`You are ${age} years old.`
+    demoClick.innerHTML = "Refresh Now!";
 });
-// window.addEventListener('click',function(){
-//     // displayAge.style.visibility="hidden"; 
+demoClick.addEventListener('click',function(){
+  window.location.reload();
+})
+// window.addEventListener("click", function(){
 //     if (displayAge.style.visibility=='visible') {
 //         displayAge.style.visibility = 'hidden';
 //     }
-// })
-
+//     // document.getElementById("demo").innerHTML = "Hello World!";
+//   });

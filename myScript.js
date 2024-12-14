@@ -29,3 +29,26 @@ demoClick.addEventListener('click',function(){
 //     }
 //     // document.getElementById("demo").innerHTML = "Hello World!";
 //   });
+document.getElementById("sm").onclick = function(){
+    alert("Feature Coming soon..")
+}
+window.onload = function(){
+	var popup = document.getElementById('popup');
+    var overlay = document.getElementById('backgroundOverlay');
+    var openButton = document.getElementById('openOverlay');
+    setTimeout(()=>{
+        openButton.value = "Close Now"
+                    }, 5000) 
+    document.onclick = function(e){
+        if(e.target.id == 'backgroundOverlay'){
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+             openButton.value = "Open Popup"
+        }
+        if(e.target === openButton){
+         	popup.style.display = 'block';
+            overlay.style.display = 'block';
+           openButton.value = "Close Now"
+        }
+    };
+};

@@ -3,8 +3,8 @@
 It is a simple Javascript project which calculates ypur age in years.
 
 ## Default view
-![Default View](container.png)
-![Default View](result.png)
+![Default View](imago/hyewall.png)
+![Default View](imago/hyeresult.png)
 
 ## 💻Ohanz Tech Stack
 <br>

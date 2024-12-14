@@ -1,9 +1,10 @@
 *{
-    margin:0;
-    padding:0;
+    margin:10;
+    padding:5;
     box-sizing:border-box;
     font-family:cursive;
 }
+
 
 .container{
     display:flex;
@@ -17,7 +18,7 @@
     background-color:darkslateblue;
     box-shadow:8px 8px black;
     color:white;
-    padding:5% 0%;
+    padding:2% 0%;
 }
 
 #currentDate{
